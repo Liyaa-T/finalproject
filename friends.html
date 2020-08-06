@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Friends</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 </head>
 <body>
-    <script>function openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-      }
-      
-      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-      function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-      }</script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+    <script>
+    var audioElement = document.createElement("audio");
+    audioElement.setAttribute("src", "images/NBA_Youngboy_ALL_IN.mp3");
+    // Theme Button
+    $(".theme-button").on("click", function() {
+      audioElement.play();
+    });
+    $(".pause-button").on("click", function() {
+      audioElement.pause(); });
+    </script>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="file:///C:/Users/Liyaa/finalproject/family.html">Family</a>
